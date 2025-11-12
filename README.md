@@ -16,4 +16,16 @@ Inside you’ll find simple unit tests that exercise various assertions (using P
 
 Think of it like a developer-friendly launch pad: clone or fork the repo, adapt the tests or workflow for your own code, and you’re set up with CI in minutes rather than hours.
 
+### Technical Documentation
+
+#### Repository overview
+
+The repository contains the following key components:
+
+- A folder [tests/](https://github.com/EDGENortheastern/if-combined-unittest-resources/tree/main/tests) containing sample unit tests written with Python’s unittest framework.
+
+- A workflow definition in [.github/workflows/test.yml](https://github.com/EDGENortheastern/if-combined-unittest-resources/blob/main/.github/workflows/test.yml) which instructs GitHub Actions to run these tests on every push or pull request.
+
+- A README and license file to document usage and legal terms.
+
 
