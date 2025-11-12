@@ -28,4 +28,18 @@ The repository contains the following key components:
 
 - A README and license file to document usage and legal terms.
 
+#### YAML workflow file
+
+The file `test.yml` is a YAML (YAML Ain’t Markup Language) configuration file used by GitHub Actions. It defines a workflow, which is triggered by one or more events (such as code being pushed or a pull request being opened). Within the workflow you specify one or more jobs, each of which runs on a specified runner environment (for example, `ubuntu-latest`). Inside each **job**, you list steps, which can include checking out the code, installing dependencies, setting up a runtime (here, Python), and executing commands (here, unit tests).
+
+In this repository’s workflow:
+
+- The workflow triggers on push and pull_request events.
+
+- A job named test runs on the ubuntu-latest runner.
+
+- The steps are: check out the code via `actions/checkout`; set up Python via `actions/setup-python`; optionally install dependencies (via `pip install -r requirements.txt`); then run the tests with `python -m unittest discover -s tests`.
+
+If the tests pass, the job succeeds; if any test fails, the workflow marks failure.
+
 
